@@ -4,7 +4,7 @@
         <th>Login</th>
         <th></th>
     </tr>
-            <?php echo Form::open('/index.php/login'); ?>
+            <?php echo Form::open(); ?>
             <tr>
                 <td>
                     <?php echo Form::label('username', 'Username')?>

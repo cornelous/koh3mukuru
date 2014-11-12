@@ -3,7 +3,7 @@
         <th>Reset Password</th>
         <th></th>
     </tr>
-            <?php echo Form::open('/index.php/reset'); ?>
+            <?php echo Form::open(); ?>
             <tr>
                 <td>
                     <?php echo Form::label('email', 'Please enter your email address')?>
