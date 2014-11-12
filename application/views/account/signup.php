@@ -3,7 +3,7 @@
         <th>Sign Up</th>
         <th></th>
     </tr>
-    <?php echo Form::open('/index.php/signup'); ?>
+    <?php echo Form::open(); ?>
     <tr>
         <td>
             <?php echo Form::label('image', 'Image')?>:<br>

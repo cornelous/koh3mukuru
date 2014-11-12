@@ -4,6 +4,14 @@ class Controller_Welcome extends Controller_Application {
 
 	public function action_index()
 	{
+	$session = Session::instance();
+        $username = $session->get('username');
+
+        if (!isset($username)){
+          $this->request->redirect('login');
+       }
+
+
         $view = View::factory('welcome')
             ->bind('users', $users)
             ->bind('pager_links', $pager_links);

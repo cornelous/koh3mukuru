@@ -17,7 +17,7 @@ return array
             'dsn'        => 'mysql:host=localhost;dbname=mukuru',
             'username'   => 'root',
             //'password'   => 'r00tdb',
-            'password'   => 'root',
+            'password'   => '',
             'persistent' => FALSE,
         ),
         /**

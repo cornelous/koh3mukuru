@@ -24,10 +24,8 @@ abstract class Controller_Application extends Controller_Template {
         $username = $session->get('username');
         
 
-        if (!$username){
-
-            Request::instance()
-                ->redirect('login');
-        }
+//        if (!isset($username)){
+  //          $this->request->redirect('login');
+    //    }
     }
 }

@@ -58,7 +58,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  caching     enable or disable internal caching                 FALSE
  */
 Kohana::init(array(
-    'base_url'   => '/kohana30/',
+    'base_url'   => '/',
 ));
 /**
  * Attach the file write to logging. Multiple writers are supported.

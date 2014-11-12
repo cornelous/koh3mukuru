@@ -48,7 +48,7 @@ class Controller_User_Account extends Controller_Application {
                     $session->set('username', $user['username']);
                 }
                 //redirect to user profile i.e login as user
-                $this->request->redirect('index.php/user_profile/index/');
+                $this->request->redirect('user_profile/index/');
             }
             elseif ($loggedadmin) {
                 foreach ($loggedadmin as $admin) {
@@ -56,7 +56,7 @@ class Controller_User_Account extends Controller_Application {
                     $session->set('username', $admin['username']);
                 }
                 //redirect to user profile i.e login as admin
-                $this->request->redirect('index.php/welcome');
+                $this->request->redirect('welcome');
             }
 
         }
@@ -67,7 +67,7 @@ class Controller_User_Account extends Controller_Application {
         $session = Session::instance();
         $success = $session->destroy();
         if ($success){
-            $this->request->redirect('index.php/login');
+            $this->request->redirect('login');
         }
     }
 
